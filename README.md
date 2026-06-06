@@ -1,6 +1,5 @@
 # Cross-Validation vs Hold-Out Testing
-
-**An Empirical Comparison of Model Evaluation Methods**
+## An Empirical Comparison of Model Evaluation Methods
 
 Reliable model evaluation is essential in machine learning. Two of the most widely used evaluation approaches are hold-out testing and k-fold cross-validation. While both methods aim to estimate how well a model will perform on unseen data, they differ in their susceptibility to sampling variation and computational cost. This project investigates the impact of evaluation methodology on model performance estimates and ranking stability using the Diabetes Health Indicators dataset. The study compares cross-validation and hold-out testing across multiple classification algorithms and examines how dataset size influences the reliability of model evaluation.
 
@@ -35,16 +34,19 @@ EVALUATION METHODOLOGY -
 Two evaluation strategies were compared:
 
 1. Cross-Validation - Models were evaluated using k-fold cross-validation, where the dataset was divided into multiple folds and each fold was used as a test set once. Final performance was calculated as the average across all folds.
+
 Advantages:
 - Reduces the effect of random train-test splits
 - Produces more stable performance estimates
 - Makes better use of available data
 
 2. Hold-Out Testing - Models were evaluated using a single 2:1 train-test split.
+
 Advantages:
 - Simple to implement
 - Computationally efficient
 - Suitable for large datasets
+
 Disadvantages:
 - More sensitive to the choice of train-test split
 - Can produce less stable performance estimates
