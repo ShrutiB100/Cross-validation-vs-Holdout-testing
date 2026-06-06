@@ -3,7 +3,7 @@
 
 Reliable model evaluation is essential in machine learning. Two of the most widely used evaluation approaches are hold-out testing and k-fold cross-validation. While both methods aim to estimate how well a model will perform on unseen data, they differ in their susceptibility to sampling variation and computational cost. This project investigates the impact of evaluation methodology on model performance estimates and ranking stability using the Diabetes Health Indicators dataset. The study compares cross-validation and hold-out testing across multiple classification algorithms and examines how dataset size influences the reliability of model evaluation.
 
-OBJECTIVES - 
+**OBJECTIVES -**
 
 The primary objectives of this project are:
 - Compare cross-validation and hold-out testing as model evaluation strategies.
@@ -12,13 +12,13 @@ The primary objectives of this project are:
 - Examine how reducing dataset size affects evaluation reliability.
 - Assess the relative merits of cross-validation and hold-out testing in practical machine learning workflows.
 
-DATASET - 
+**DATASET -** 
 
 The experiments were conducted using the Diabetes Health Indicators dataset derived from the CDC Diabetes Health Indicators data collection. The dataset contains approximately 70,000 observations and a range of health-related features used to predict diabetes outcomes. To investigate the effect of dataset size on evaluation stability, experiments were performed on:
 - The full dataset (~70,000 observations)
 - A random sample of 3,000 observations
 
-MODELS EVALUATED - 
+**MODELS EVALUATED -** 
 
 The following classification algorithms were evaluated:
 - k-Nearest Neighbours (default parameters)
@@ -29,7 +29,7 @@ The following classification algorithms were evaluated:
 
 Feature scaling was applied prior to training the k-Nearest Neighbour models.
 
-EVALUATION METHODOLOGY - 
+**EVALUATION METHODOLOGY -** 
 
 Two evaluation strategies were compared:
 
@@ -51,7 +51,7 @@ Disadvantages:
 - More sensitive to the choice of train-test split
 - Can produce less stable performance estimates
 
-KEY FINDINGS - 
+**KEY FINDINGS -** 
 
 Full Dataset (~70,000 Observations)
 - Cross-validation and hold-out testing produced nearly identical accuracy estimates.
@@ -64,12 +64,12 @@ Reduced Dataset (3,000 Observations)
 - Cross-validation produced more consistent performance estimates.
 - Hold-out testing became more sensitive to sampling variation.
 
-OVERALL CONCLUSION - 
+**OVERALL CONCLUSION -** 
 
 The experiments demonstrate that hold-out testing can provide reliable results when large amounts of data are available. However, as dataset size decreases, cross-validation becomes increasingly valuable due to its ability to reduce the impact of random sampling variation and provide more stable model comparisons.
 
 
-LIMITATIONS - 
+**LIMITATIONS -** 
 
 Several limitations should be considered when interpreting the results:
 - Only a small set of classification algorithms and hyperparameter configurations were evaluated.
@@ -79,7 +79,7 @@ Several limitations should be considered when interpreting the results:
 
 Despite these limitations, the experiments provide a useful comparison of evaluation methodologies under both large and small sample conditions.
 
-FUTURE WORK -
+**FUTURE WORK -**
 
 Potential extensions of this study include:
 - Performing repeated hold-out testing across multiple random train-test splits.
